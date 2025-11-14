@@ -93,7 +93,7 @@ const JobDetails = () => {
     e.preventDefault();
 
     // Check 1: Is profile complete?
-    if (checkProfileCompletion()) {
+    if (!checkProfileCompletion()) {
       setinfo((prev) => ({
         ...prev,
         icon: RiUserUnfollowFill,
