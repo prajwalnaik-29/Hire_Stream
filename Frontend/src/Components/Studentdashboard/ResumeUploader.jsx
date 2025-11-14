@@ -32,7 +32,7 @@ const ResumeUploader = ({ setProfile, setIsEditing }) => {
     formData.append('file', file);
 
     try {
-      const res = await fetch('http://localhost:5000/student/parse-resume', {
+      const res = await fetch('https://hire-stream.onrender.com/student/parse-resume', {
         method: 'POST',
         body: formData,
       });
